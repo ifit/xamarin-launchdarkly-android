@@ -18,7 +18,8 @@
     <PackageVersion>2.5.4</PackageVersion>
     <Authors>Robert Molnar</Authors>
     <Description>Binding of the Android Launch Darkly mobile SDK.</Description>
-    <PackageLicenseUrl>https://github.com/launchdarkly/android-client</PackageLicenseUrl>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/molnarr2/xamarin-launchdarkly-android</PackageProjectUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
