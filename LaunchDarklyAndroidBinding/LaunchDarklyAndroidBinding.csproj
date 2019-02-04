@@ -14,7 +14,7 @@
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <PackOnBuild>true</PackOnBuild>
-    <PackageId>LaunchDarklyAndroidBinding.Android</PackageId>
+    <PackageId>iFit.LaunchDarkly.Android</PackageId>
     <PackageVersion>2.5.4</PackageVersion>
     <Authors>Robert Molnar</Authors>
     <Description>Binding of the Android Launch Darkly mobile SDK.</Description>
