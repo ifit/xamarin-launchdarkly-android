@@ -15,7 +15,7 @@
     <AndroidClassParser>class-parse</AndroidClassParser>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>iFit.LaunchDarkly.Android</PackageId>
-    <PackageVersion>2.5.5</PackageVersion>
+    <PackageVersion>2.5.4</PackageVersion>
     <Authors>Robert Molnar</Authors>
     <Description>Binding of the Android Launch Darkly mobile SDK.</Description>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
@@ -46,20 +46,24 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
+    <Reference Include="Java.Interop" />
     <Reference Include="GoogleGson">
-      <HintPath>\tmp\nuget\GoogleGson.2.8.1\lib\MonoAndroid\GoogleGson.dll</HintPath>
+      <HintPath>..\packages\GoogleGson.2.8.1\lib\MonoAndroid\GoogleGson.dll</HintPath>
     </Reference>
     <Reference Include="Square.OkIO">
-      <HintPath>\tmp\nuget\Square.OkIO.1.13.0\lib\MonoAndroid\Square.OkIO.dll</HintPath>
+      <HintPath>..\packages\Square.OkIO.1.13.0\lib\MonoAndroid\Square.OkIO.dll</HintPath>
     </Reference>
     <Reference Include="Square.OkHttp3">
-      <HintPath>\tmp\nuget\Square.OkHttp3.3.8.1\lib\MonoAndroid\Square.OkHttp3.dll</HintPath>
+      <HintPath>..\packages\Square.OkHttp3.3.8.1\lib\MonoAndroid\Square.OkHttp3.dll</HintPath>
+    </Reference>
+    <Reference Include="Naxam.Jakewharton.Timber">
+      <HintPath>..\packages\Naxam.Jakewharton.Timber.4.7.1\lib\MonoAndroid10\Naxam.Jakewharton.Timber.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Google.Guava">
-      <HintPath>\tmp\nuget\Xamarin.Google.Guava.23.2.0\lib\MonoAndroid403\Xamarin.Google.Guava.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Google.Guava.23.2.0\lib\MonoAndroid403\Xamarin.Google.Guava.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.Annotations">
-      <HintPath>\tmp\nuget\Xamarin.Android.Support.Annotations.26.0.2\lib\MonoAndroid80\Xamarin.Android.Support.Annotations.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Android.Support.Annotations.26.0.2\lib\MonoAndroid80\Xamarin.Android.Support.Annotations.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -79,17 +83,15 @@
     <LibraryProjectZip Include="Jars\launchdarkly-android-client-release.aar" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedReferenceJar Include="Jars\hamcrest-library-1.3.jar" />
-    <EmbeddedReferenceJar Include="Jars\hamcrest-core-1.3.jar" />
-    <EmbeddedReferenceJar Include="Jars\easymock-3.4.jar" />
-    <EmbeddedReferenceJar Include="Jars\animal-sniffer-annotations-1.14.jar" />
-    <EmbeddedReferenceJar Include="Jars\objenesis-2.2.jar" />
     <EmbeddedReferenceJar Include="Jars\okhttp-eventsource-1.8.0.jar" />
-  </ItemGroup>
-  <ItemGroup>
-    <ReferenceJar Include="Jars\slf4j-api-1.7.22.jar" />
+    <EmbeddedReferenceJar Include="Jars\animal-sniffer-annotations-1.14.jar" />
+    <EmbeddedReferenceJar Include="Jars\easymock-3.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\hamcrest-core-1.3.jar" />
+    <EmbeddedReferenceJar Include="Jars\hamcrest-library-1.3.jar" />
+    <EmbeddedReferenceJar Include="Jars\objenesis-2.2.jar" />
+    <EmbeddedReferenceJar Include="Jars\slf4j-api-1.7.22.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <Import Project="\tmp\nuget\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.targets" Condition="Exists('\tmp\nuget\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.targets')" />
-  <Import Project="\tmp\nuget\Xamarin.Android.Support.Annotations.26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets" Condition="Exists('\tmp\nuget\Xamarin.Android.Support.Annotations.26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Support.Annotations.26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Annotations.26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets')" />
 </Project>
