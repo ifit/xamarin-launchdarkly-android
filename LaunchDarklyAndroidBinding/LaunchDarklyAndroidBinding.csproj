@@ -15,7 +15,7 @@
     <AndroidClassParser>class-parse</AndroidClassParser>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>iFit.LaunchDarkly.Android</PackageId>
-    <PackageVersion>2.5.4</PackageVersion>
+    <PackageVersion>2.5.6</PackageVersion>
     <Authors>Robert Molnar</Authors>
     <Description>Binding of the Android Launch Darkly mobile SDK.</Description>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
